@@ -2527,6 +2527,7 @@ fieldset:disabled a.btn {
     border-color: #19C909;
 }
 
+.navbar-toggler:hover,
 .btn-primary:hover {
     color: #fff;
     background-color: #159c09;
@@ -10133,7 +10134,7 @@ p {
 }
 
 .page-section h2.section-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -10207,8 +10208,12 @@ img::-moz-selection {
     font-size: 0.75rem;
     color: #fff;
     text-transform: uppercase;
-    background-color: #19C909;
+    background-color: #000;
     border: 0;
+}
+
+#mainNav .navbar-toggler {
+    background-color: #000;
 }
 
 #mainNav .navbar-brand {
@@ -10707,8 +10712,8 @@ section#contact form#contactForm :-ms-input-placeholder {
     background-image: url(../assets/img/apps/iphone-11.png);
     height: 320px;
     background-repeat: no-repeat;
-    background-position: center -67px;
-    background-size: cover;
+    background-position: center -24px;
+    background-size: 470px;
 }
 
 .dropdown-custom,
@@ -10722,6 +10727,10 @@ section#contact form#contactForm :-ms-input-placeholder {
     background-color: #212529;
 }
 
+.hide-app-image {
+    display: none;
+}
+
 @media (min-width: 767px) {
     .phone-container {
         background-position: center 13px;
@@ -10733,4 +10742,17 @@ section#contact form#contactForm :-ms-input-placeholder {
         background-position: center 23px;
         background-size: 440px;
     }
+    .page-section h2.section-heading {
+        font-size: 2rem;
+    }
+    .hide-desk-image {
+        display: none;
+    }
+    .hide-app-image {
+        display: block;
+    }
+    /* .phone-container {
+        background-position: center -67px;
+        background-size: cover;
+    } */
 }

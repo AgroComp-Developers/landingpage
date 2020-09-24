@@ -40,9 +40,9 @@
                             Apps
                         </a>
                         <div class="dropdown-menu dropdown-custom" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item nav-link js-scroll-trigger" href="#agroanuncios">AgroAnúncios</a>
-                            <a class="dropdown-item nav-link js-scroll-trigger" href="#dailymilk">Daily Milk</a>
-                            <a class="dropdown-item nav-link js-scroll-trigger" href="#mip">MIP</a>
+                            <a class="dropdown-item nav-link js-scroll-trigger ml-2 ml-lg-0" href="#agroanuncios">AgroAnúncios</a>
+                            <a class="dropdown-item nav-link js-scroll-trigger ml-2 ml-lg-0" href="#dailymilk">Daily Milk</a>
+                            <a class="dropdown-item nav-link js-scroll-trigger ml-2 ml-lg-0" href="#mip">MIP</a>
                         </div>
                     </li>
 
@@ -56,13 +56,13 @@
         <div class="container">
             <div class="row">
                 <!-- Description -->
-                <div class="col mr-4 mt-4">
+                <div class="col-md col-sm-12 mr-lg-4 mt-4">
                     <p class="text-justify">Somos uma equipe multidisciplinar formada por profissionais e estudantes da área de Ciências Agrárias e TI, que desenvolve soluções tecnológicas para grandes gargalos do agronegócio Brasileiro, atualmente trabalhamos com 3 grandes
                         projetos: o Daily Milk finalista no prêmio Arlindo fragoso 2018 e da Campus Mobile 2020, o MIP 4.0 - Manejo Inteligente de Pastagens e o AgroAnúncios.
                     </p>
                 </div>
                 <!-- Form -->
-                <div class="col ml-4">
+                <div class="col-md col-sm-12 ml-lg-4">
                     <h4 class="text-left">Fale Conosco</h4>
                     <form>
                         <div class="form-group">
@@ -88,10 +88,14 @@
     <!-- AgroAnuncios -->
     <section class="app-section" id="agroanuncios">
         <div class="container">
-            <div class="row">
-                <div class="col phone-container"></div>
+            <div class="row row d-flex flex-column-reverse flex-sm-row">
+                <div class="col phone-container hide-app-image"></div>
+
                 <div class="col text-app-container d-flex flex-column justify-content-center">
                     <h3>AgroAnúncios</h3>
+
+                    <div class="phone-container hide-desk-image"></div>
+
                     <p class="large text-muted app-description">
                         O AgroAnúncios é uma ferramenta que encurta os elos da extensa cadeia produtiva da hortifruticultura, ligando o produtor rural ao comerciante com segurança, confiança e responsabilidade.
                     </p>
@@ -102,24 +106,31 @@
     <!-- Daily Milk -->
     <section class="app-section bg-light" id="dailymilk">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex flex-column flex-sm-row">
                 <div class="col text-app-container d-flex flex-column justify-content-center">
-                    <h3 class="text-right">DailyMilk</h3>
-                    <p class="large text-muted text-right app-description">O Daily Milk é um sistema integrado de gerenciamento amparado em tecnologias da informação e comunicação que permite a melhoria do controle de variabilidade organizacional, otimizando economicamente, socialmente e ambientalmente o
+                    <h3 class="text-sm-right">DailyMilk</h3>
+
+                    <div class="phone-container hide-desk-image"></div>
+
+                    <p class="large text-muted text-sm-right app-description">O Daily Milk é um sistema integrado de gerenciamento amparado em tecnologias da informação e comunicação que permite a melhoria do controle de variabilidade organizacional, otimizando economicamente, socialmente e ambientalmente o
                         desempenho da fazenda leiteira, visando minimizar o alto custo e maximizar a produção.
                     </p>
                 </div>
-                <div class="col phone-container"></div>
+                <div class="col phone-container hide-app-image"></div>
             </div>
         </div>
     </section>
     <!-- MIP -->
     <section class="app-section" id="mip">
         <div class="container">
-            <div class="row">
-                <div class="col phone-container"></div>
+            <div class="row d-flex flex-column-reverse flex-sm-row">
+                <div class="col phone-container hide-app-image"></div>
+
                 <div class="col text-app-container d-flex flex-column justify-content-center">
                     <h3>MIP</h3>
+
+                    <div class="phone-container hide-desk-image"></div>
+
                     <p class="large text-muted app-description">O MIP 4.0 é um sistema de gerenciamento de pastagens. Através de imagens multiespectrais coletadas a partir de satélites e voos com drones é determinada a capacidade suporte de uma área de pastagem, além de inferir qual é o valor protéico
                         do pasto nessa mesma área.</p>
                 </div>
@@ -254,6 +265,13 @@
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }, {
+                breakpoint: 567,
+                settings: {
+                    autoplaySpeed: 400,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 }
             }]
